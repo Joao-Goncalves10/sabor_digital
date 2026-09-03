@@ -1,7 +1,7 @@
 {
   "name": "somativa",
   "version": "1.0.0",
-  "description": "",
+  "description": "API Backend construída em Node.js com padrão de arquitetura MVC (Model-View-Controller) e banco de dados MySQL para o sistema de gestão da \"Sabor Digital\" (Cardápios, Pedidos, Produtos).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,15 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "multer": "^2.1.1",
-    "mysql2": "^3.22.2",
+    "mysql2": "^3.24.3",
     "puppeteer-core": "^25.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-Goncalves10/sabor_digital.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Joao-Goncalves10/sabor_digital/issues"
+  },
+  "homepage": "https://github.com/Joao-Goncalves10/sabor_digital#readme"
 }

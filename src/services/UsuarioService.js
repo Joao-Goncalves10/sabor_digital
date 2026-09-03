@@ -15,7 +15,7 @@ class UsuarioService {
             total: usuariosFormatados.length
         };
     }
-
+    
     async buscarUsuarioPorId(id) {
         if (!id || isNaN(id)) {
             throw { status: 400, mensagem: "ID inválido" };
