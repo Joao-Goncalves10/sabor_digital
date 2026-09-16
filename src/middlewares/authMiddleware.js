@@ -19,7 +19,7 @@ const verificarToken = (req, res, next) => {
     const token = parts[1];
 
     try {
-        const decodificado = jwt.verify(token, JWT_SECRET);
+        const decodificado = jwt.verify(token, JWT_SECRET, { algorithms: ['HS256'] });
         req.usuarioId = decodificado.id;
         req.usuarioPapel = decodificado.papel;
         return next();

@@ -60,7 +60,7 @@ class UsuarioService {
         const token = jwt.sign(
             { id: usuario.id, email: usuario.email, papel: usuario.papel },
             JWT_SECRET,
-            { expiresIn: '8h' }
+            { expiresIn: '8h'}
         );
 
         return {
