@@ -80,7 +80,12 @@ class UsuarioService {
             throw { status: 400, mensagem: "Nenhum dado válido enviado para atualização" };
         }
 
-        await UsuarioRepository.update(id, atualizado);
+        // Gerar o JWT
+        const token = jwt.sign(
+            { id: usuario.id, email: usuario.email, papel: usuario.papel },
+            JWT_SECRET,
+            { expiresIn: '8h'}
+        );
 
         return {
             sucesso: true,
